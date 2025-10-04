@@ -1,7 +1,10 @@
-package br.com.truta;
+package br.com.truta.persistance;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 
 /**
@@ -24,6 +27,15 @@ import jakarta.persistence.Entity;
  * }
  */
 @Entity
-public class MyEntity extends PanacheEntity {
-    public String field;
+public class UrlEntity extends PanacheEntity {
+
+    public String url_longa;
+    public String url_curta;
+    @Override
+    public String toString() {
+        return "Entrada [url_longa=" + url_longa + ", url_curta=" + url_curta + "]";
+    }
+
+
+
 }

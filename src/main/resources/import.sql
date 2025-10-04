@@ -4,3 +4,9 @@
 -- insert into myentity (id, field) values(2, 'field-2');
 -- insert into myentity (id, field) values(3, 'field-3');
 -- alter sequence myentity_seq restart with 4;
+
+-- CREATE SCHEMA IF NOT EXISTS truta_url;
+
+-- CREATE TABLE IF NOT EXISTS truta_url.url_encurtada (
+--     id int, url_longa text, url_curta text 
+-- );
